@@ -7,19 +7,19 @@ typedef struct {
 
 void increaseBunch_p(bunch_t *inputBunch_p)
 {
-    inputBunch_p->x++;
-    inputBunch_p->y++;
-    inputBunch_p->z++;
-    inputBunch_p->c++;
+    inputBunch_p->x = inputBunch_p->x + 1;
+    inputBunch_p->y = inputBunch_p->y + 1;
+    inputBunch_p->z = inputBunch_p->z + 1;
+    inputBunch_p->c = inputBunch_p->c + 1;
 }
 
 bunch_t increaseBunch(bunch_t inputBunch)
 {
     bunch_t outputBunch;
-    outputBunch.x = inputBunch.x++;
-    outputBunch.y = inputBunch.y++;
-    outputBunch.z = inputBunch.z++;
-    outputBunch.c = inputBunch.c++;
+    outputBunch.x = inputBunch.x+1;
+    outputBunch.y = inputBunch.y+1;
+    outputBunch.z = inputBunch.z+1;
+    outputBunch.c = inputBunch.c+1;
 
     return outputBunch;
 }
